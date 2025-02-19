@@ -23,7 +23,7 @@ body {
 h1 {
     max-width: 37.25rem;
     margin: 0 auto;
-    padding: 1.5rem 1.25rem;
+    padding: 1.5em 1.25em;
 }
 
 h1 .flex {
@@ -88,7 +88,7 @@ table caption {
 tbody td {
     width: 100vw;
     min-width: 4rem;
-    max-width: 4rem;
+    max-width: 12rem;
 }
 
 tbody th {

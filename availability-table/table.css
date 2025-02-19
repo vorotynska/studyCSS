@@ -1,0 +1,14 @@
+:root {
+    --color1: lightgreen;
+    --color2: chartreuse;
+    --color3: lightpink;
+    --color4: palevioletred;
+    --color5: purple;
+    --solid-border: 2px solid blue;
+    --dashed-border: 2px dashed orange;
+}
+
+* {
+    border: 1px solid black;
+    box-sizing: border-box;
+}

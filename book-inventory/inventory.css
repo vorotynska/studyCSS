@@ -1,0 +1,91 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: #0a0a23;
+}
+
+section {
+    max-width: 40rem;
+    margin: 4rem auto;
+    border: 2px solid #d0d0d5;
+}
+
+h1 {
+    text-align: center;
+    padding: 1.5rem 1.25rem;
+}
+
+table {
+    border-collapse: collapse;
+    border: 0;
+    width: 100%;
+}
+
+th:nth-child(-n+3),
+td:nth-child(-n+3) {
+    padding: 10px;
+}
+
+.read {
+    background-image: linear-gradient(rgb(243, 234, 234), rgb(245, 204, 207));
+}
+
+.to-read {
+    background-image: linear-gradient(rgb(223, 248, 223), rgb(159, 234, 159));
+}
+
+.in-progress {
+    background-image: linear-gradient(lightyellow, rgb(243, 243, 149));
+}
+
+span {
+    display: inline-block;
+}
+
+span[class="status"],
+span[class^="rate"] {
+    width: 7em;
+    height: 2em;
+    padding: 0.25em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+tr.to-read .status {
+    border: 1px solid lightgreen;
+    border-radius: 1em;
+    background-image: linear-gradient(lightgreen, rgb(60, 227, 60));
+}
+
+tr.in-progress .status {
+    border: 1px solid yellow;
+    border-radius: 1em;
+    background-image: linear-gradient(rgb(242, 242, 50), yellow);
+}
+
+tr.read .status {
+    border: 1px solid lightcoral;
+    border-radius: 1em;
+    background-image: linear-gradient(rgb(250, 187, 187), rgb(227, 125, 125));
+    
+}
+
+span[class^="rate"] > span {
+    width: 0.8em;
+    height: 0.8em;
+    border: 1px solid purple;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    margin: 0.5em 0.15em;
+}
+
+span[class~="one"] > span:first-child,
+span[class~="two"] > span:nth-child(-n+2),
+span[class~="three"] > span {
+    background-image: linear-gradient(rgb(206, 127, 206), purple);
+}
+
