@@ -1,14 +1,102 @@
 :root {
-    --color1: lightgreen;
-    --color2: chartreuse;
-    --color3: lightpink;
-    --color4: palevioletred;
-    --color5: purple;
-    --solid-border: 2px solid blue;
-    --dashed-border: 2px dashed orange;
+    --color1: #74c69d;
+    --color2: #52b788;
+    --color3: #40916c;
+    --color4: #2d6a4f;
+    --color5: #1b4332;
+    --solid-border: 2px solid #081c15;
+    --dashed-border: 2px dashed #081c15;
 }
 
 * {
-    border: 1px solid black;
     box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    height: 100%;
+    font-family: sans-serif;
+    background-color: #d8f3dc;
+    color: #081c15;
+}
+
+section {
+    max-width: 30rem;
+    min-width: 13em;
+    margin: 3em auto;
+    border: 5px solid var(--color2);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+    padding: 1em;
+    border-collapse: collapse;
+}
+
+tbody tr[class="half"] {
+    border-bottom: var(--dashed-border);
+}
+
+tbody tr[class="sharp"] {
+    border-bottom: var(--solid-border);
+}
+
+th:nth-child(-n+3),
+td:nth-child(-n+3) {
+    padding: 10px;
+}
+
+td.available-1 {
+  background-color: var(--color1);
+}
+
+td.available-2 {
+    background-color: var(--color2);
+}
+
+td.available-3 {
+    background-color: var(--color3);
+}
+
+td.available-4 {
+    background-color: var(--color4);
+}
+
+td.available-5 {
+    background-color: var(--color5);
+}
+
+#legend {
+    margin: 2em auto;
+    width: 10em;
+    text-align: center;
+    padding: 10px;
+}
+
+span {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+#legend > span {
+    font-weight: 500;
+}
+
+#legend-gradient {
+    height: 16px;
+    background: linear-gradient(
+        90deg,
+        var(--color1),
+        var(--color1)20%,
+        var(--color2) 20%,
+        var(--color2) 40%,
+        var(--color3) 40%,
+        var(--color3) 60%,
+        var(--color4) 60%,
+        var(--color4) 80%,
+        var(--color5) 80%,
+        var(--color5)
+        );
 }
