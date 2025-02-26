@@ -1,0 +1,37 @@
+# 🔹 .NET build files
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+*.cache
+
+# 🔹 User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# 🔹 VS Code settings
+.vscode/
+
+# 🔹 Rider / JetBrains settings
+.idea/
+*.sln.iml
+
+# 🔹 Log and debug files
+logs/
+*.log
+*.tlog
+*.log*
+debug/
+trace/
+*.sdf
+*.opendb
+
+# 🔹 NuGet packages
+*.nupkg
+packages/
+project.lock.json
+project.assets.json
+.nuget/
