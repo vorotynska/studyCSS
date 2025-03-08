@@ -1,3 +1,13 @@
+dotnet new console -o /project/guide/
+
+/project/guide/
+├── guide.csproj
+├── Program.cs
+├── obj/
+├── bin/
+
+
+
 Настройки .gitignore для проекта .NET Console App:
 
 # Скомпилированные файлы
